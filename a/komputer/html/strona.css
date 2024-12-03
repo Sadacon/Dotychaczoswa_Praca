@@ -1,0 +1,56 @@
+/* Stylowanie ciała dokumentu */
+body {
+    margin: 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Styl dla kontenera */
+#container {
+    position: relative;
+    margin: auto;
+    width: 1078px;
+    height: auto;
+    overflow: hidden;
+    border: 1px solid #ffffff;
+}
+
+/* Styl nagłówka */
+header {
+    background-color: #007acc;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Główne kolumny */
+#col-left {
+    background-color: #0066cc;
+    width: 200px;
+    height: 200px;
+    float: left;
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#col-center {
+    background-color: #cccccc;
+    width: 800px;
+    height: auto;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Styl stopki */
+footer {
+    clear: both;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
