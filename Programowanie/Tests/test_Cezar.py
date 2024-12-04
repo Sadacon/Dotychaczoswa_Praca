@@ -14,3 +14,5 @@ class TestCezar:
         decrypted_text = c.decrypt('Eduwhn', 3)
         print(f'Decrypted text: {decrypted_text}')
         assert decrypted_text == 'Bartek'  # Oczekiwany wynik deszyfrowania
+
+

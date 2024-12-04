@@ -1,7 +1,7 @@
 import os
 
 try:
-    os.mkdir('AutomatyzacjaTestów')  # Próba utworzenia katalogu
+    os.mkdir('../Tests')  # Próba utworzenia katalogu
     print('inna instrukcja')
 except FileExistsError:
     print('Nie można utworzyć katalogu o tej samej nazwie')
@@ -15,10 +15,10 @@ for file_name in os.listdir():
     print(f'Plik {file_name}')
 
 #Tworzy katalogi 1 po drugim
-os.makedirs('komputer/monitor/rezystor', exist_ok=True)#exist_ok=True \ niezgłasza wyjątku
+os.makedirs('html_css/monitor/rezystor', exist_ok=True)#exist_ok=True \ niezgłasza wyjątku
 # Funkcja chdir i getcwd
 print(f'Gdzie ja jestem? {os.getcwd()}')
-os.chdir('komputer')
+os.chdir('../html_css')
 print(f' Gdzie ja jestem? {os.getcwd()}')
 
 

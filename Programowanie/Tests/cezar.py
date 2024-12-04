@@ -13,3 +13,4 @@ name = 'Bartek'
 c = Cezar()
 print(c.encrypt(name, 3))
 print(c.decrypt('Eduwhn', 3))
+
