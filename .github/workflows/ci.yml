@@ -34,4 +34,4 @@ jobs:
         run: pip install flake8
 
       - name: Run flake8
-        run: flake8 cezar.py test_Cezar.py
+        run: flake8 Programowanie/Tests/cezar.py Programowanie/Tests/test_Cezar.py
