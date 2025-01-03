@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamiczna Galeria</title>
+    <!-- Dodanie Bootstrapa -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .jumbotron {
+            background-color: #f8f9fa;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        .jumbotron h1 {
+            font-size: 3rem;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a.active {
+            font-weight: bold;
+        }
+
+        /* Styl dla obrazów w galerii */
+        .gallery-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover; /* Dopasowuje obraz bez zniekształceń */
+            border-radius: 10px; /* Zaokrąglenie rogów */
+        }
+    </style>
+</head>
+<body>
+    <!-- Nawigacja -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Moja Strona</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Strona Główna</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">O mnie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Jumbotron -->
+    <section id="home" class="jumbotron">
+        <div class="container">
+            <h1>Witaj na mojej stronie!</h1>
+            <p>Tworzę responsywne strony internetowe z wykorzystaniem Bootstrapa.</p>
+        </div>
+    </section>
+
+    <!-- Sekcja O mnie -->
+    <div class="container">
+        <section id="about" class="mt-4">
+            <h2>O mnie</h2>
+            <p>Jestem początkującym programistą z pasją do tworzenia nowoczesnych stron internetowych.</p>
+        </section>
+
+        <!-- Sekcja Galeria -->
+        <section id="gallery" class="mt-4">
+            <h2>Galeria</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="https://picsum.photos/400/200?random=1" alt="Losowy obrazek 1" class="gallery-img">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://picsum.photos/400/200?random=2" alt="Losowy obrazek 2" class="gallery-img">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://picsum.photos/400/200?random=3" alt="Losowy obrazek 3" class="gallery-img">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Sekcja Kontakt -->
+    <div class="container">
+        <section id="contact" class="mt-4">
+            <h2>Kontakt</h2>
+            <p>Skontaktuj się ze mną, wysyłając wiadomość na adres e-mail: <a href="mailto:kontakt@example.com">kontakt@example.com</a>.</p>
+        </section>
+    </div>
+
+    <!-- Stopka -->
+    <footer class="mt-4">
+    </footer>
+
+    <!-- Dodanie skryptów Bootstrapa -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

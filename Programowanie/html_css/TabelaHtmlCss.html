@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelka HTML</title>
+    <style>
+        table {
+            width: 50%;
+            margin: 20px auto;
+            border: 5px solid #000; /* Pogrubione krawędzie */
+            border-radius: 15px; /* Zaokrąglone rogi */
+            overflow: hidden; /* Chroni przed wychodzeniem zawartości poza zaokrąglone rogi */
+            border-spacing: 0; /* Usuwa odstępy między komórkami */
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        /* Zaokrąglenie rogów dla nagłówków i pierwszych/ostatnich wierszy */
+        th:first-child {
+            border-top-left-radius: 15px;
+        }
+        th:last-child {
+            border-top-right-radius: 15px;
+        }
+        tr:last-child td:first-child {
+            border-bottom-left-radius: 15px;
+        }
+        tr:last-child td:last-child {
+            border-bottom-right-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Przykładowa tabelka</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Lp.</th>
+                <th>Imię</th>
+                <th>Nazwisko</th>
+                <th>Wiek</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Jan</td>
+                <td>Kowalski</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Anna</td>
+                <td>Nowak</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Piotr</td>
+                <td>Wiśniewski</td>
+                <td>28</td
+                     <table>
+        <thead>
+            <tr>
+

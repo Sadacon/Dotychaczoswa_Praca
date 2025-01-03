@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiele Tabelek</title>
+    <style>
+        table {
+            width: 50%;
+            margin: 20px auto; /* Odstępy między tabelami */
+            border: 5px solid #000; /* Pogrubione krawędzie */
+            border-radius: 15px; /* Zaokrąglone rogi */
+            overflow: hidden; /* Chroni przed wychodzeniem zawartości poza zaokrąglone rogi */
+            border-spacing: 0; /* Usuwa odstępy między komórkami */
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        /* Zaokrąglenie rogów dla nagłówków i pierwszych/ostatnich wierszy */
+        th:first-child {
+            border-top-left-radius: 15px;
+        }
+        th:last-child {
+            border-top-right-radius: 15px;
+        }
+        tr:last-child td:first-child {
+            border-bottom-left-radius: 15px;
+        }
+        tr:last-child td:last-child {
+            border-bottom-right-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Wiele Tabelek</h1>
+
+    <!-- Pierwsza tabelka -->
+    <table>
+        <thead>
+            <tr>
+                <th>Lp.</th>
+                <th>Imię</th>
+                <th>Nazwisko</th>
+                <th>Wiek</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Jan</td>
+                <td>Kowalski</td>
+                <td>25</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Druga tabelka -->
+    <table>
+        <thead>
+            <tr>
+                <th>Produkt</th>
+                <th>Ilość</th>
+                <th>Cena</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jabłka</td>
+                <td>10</td>
+                <td>20 zł</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Trzecia tabelka -->
+    <table>
+        <thead>
+            <tr>
+                <th>Data</th>
+                <th>Wydarzenie</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2024-12-10</td>
+                <td>Tworzenie tabel w HTML</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
