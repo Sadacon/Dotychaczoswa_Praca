@@ -1,16 +1,10 @@
 class Cezar:
-    def encrypt(self, text: str, key: int):
+    def encrypt(self, text: str, key: int) -> str:
         result = ''
         for letter in text:
             encrypted_letter = chr(ord(letter) + key)
             result += encrypted_letter
         return result
 
-    def decrypt(self, text: str, key: int):
+    def decrypt(self, text: str, key: int) -> str:
         return self.encrypt(text, -key)
-
-name = 'Bartek'
-c = Cezar()
-print(c.encrypt(name, 3))
-print(c.decrypt('Eduwhn', 3))
-

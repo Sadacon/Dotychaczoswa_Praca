@@ -1,18 +1,14 @@
-import cezar
+from cezar import Cezar
 
 class TestCezar:
     def testEncryptLetters(self):
-        c = cezar.Cezar()
+        c = Cezar()
         name = 'Bartek'
-        encrypted_text = c.encrypt(name, 3)
-        print(f'Encrypted text: {encrypted_text}')
-        assert len(encrypted_text) == len(name)  # Długość szyfrowanego tekstu powinna być równa oryginalnemu
-        assert encrypted_text == 'Eduwhn'  # Oczekiwany wynik szyfrowania
+        encrypted_text = c.encrypt(name, key=3)
+        assert len(encrypted_text) == len(name)  # Długość zaszyfrowanego tekstu powinna być taka sama
+        assert encrypted_text == 'Eduwhn'       # Oczekiwany wynik szyfrowania
 
     def testDecryptLetters(self):
-        c = cezar.Cezar()
-        decrypted_text = c.decrypt('Eduwhn', 3)
-        print(f'Decrypted text: {decrypted_text}')
-        assert decrypted_text == 'Bartek'  # Oczekiwany wynik deszyfrowania
-
-
+        c = Cezar()
+        decrypted_text = c.decrypt(text='Eduwhn', key=3)
+        assert decrypted_text == 'Bartek'       # Oczekiwany wynik deszyfrowania
