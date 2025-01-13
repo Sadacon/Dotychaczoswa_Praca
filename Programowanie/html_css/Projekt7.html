@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt Parallax i animate.css</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .parallax {
+            height: 600px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .parallax-1 {
+            background-image: url('https://picsum.photos/1600/600?random=1');
+        }
+
+        .parallax-2 {
+            background-image: url('https://picsum.photos/1600/600?random=2');
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        .gallery-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border: 3px solid #004080;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-img:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .parallax {
+                background-attachment: scroll;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Nawigacja -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Moja Strona</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Strona Główna</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">O mnie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Jumbotron -->
+    <section id="home" class="parallax parallax-1 d-flex justify-content-center align-items-center">
+        <h1 class="text-light text-center">Witaj na mojej stronie!</h1>
+    </section>
+
+    <!-- Sekcja O mnie -->
+    <div class="container mt-4">
+        <section id="about">
+            <h2>O mnie</h2>
+            <p>Jestem początkującym programistą z pasją do tworzenia nowoczesnych stron internetowych.</p>
+        </section>
+    </div>
+
+    <!-- Sekcja Galeria -->
+    <div class="container mt-4">
+        <section id="gallery">
+            <h2>Galeria</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="https://picsum.photos/400/200?random=1" alt="Obrazek 1" class="gallery-img">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://picsum.photos/400/200?random=2" alt="Obrazek 2" class="gallery-img">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://picsum.photos/400/200?random=3" alt="Obrazek 3" class="gallery-img">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Sekcja Kontakt -->
+    <div class="container mt-4">
+        <section id="contact">
+            <h2>Kontakt</h2>
+            <p>Skontaktuj się ze mną na adres: <a href="mailto:kontakt@example.com">kontakt@example.com</a></p>
+        </section>
+    </div>
+
+    <!-- Sekcja Parallax 2 -->
+    <section class="parallax parallax-2">
+        <h2 class="text-center text-light animate__animated animate__zoomIn">Efekt Parallax</h2>
+    </section>
+
+    <!-- Stopka -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Projekt Parallax i animate.css</p>
+    </footer>
+
+    <!-- Dodanie skryptów Bootstrapa -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
